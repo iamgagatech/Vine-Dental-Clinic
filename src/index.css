@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ── Custom Properties (CSS Variables) ──────────────────────────────────────── */
+:root {
+  --color-brand:        #0D7377;
+  --color-brand-dark:   #0a5e62;
+  --color-brand-light:  #d0f0f0;
+  --color-cta:          #f59e0b;
+  --color-cta-dark:     #d97706;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Focus Ring ──────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* ── Skip to Content ─────────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-brand);
+  color: #fff;
+  font-weight: 600;
+  z-index: 9999;
+  border-radius: 0 0 0.5rem 0;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand); }
+
+/* ── Animations ──────────────────────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+.animate-fade-in       { animation: fade-in 0.4s ease-out both; }
+.animate-slide-left    { animation: slide-in-left 0.4s ease-out both; }
+.animate-slide-right   { animation: slide-in-right 0.4s ease-out both; }
+.animate-float         { animation: float 3s ease-in-out infinite; }
+
+/* ── Hero Gradient ───────────────────────────────────────────────────────── */
+.hero-gradient {
+  background: linear-gradient(135deg, #0a5e62 0%, #0D7377 40%, #14a8ad 100%);
+}
+
+/* ── Glass Card ──────────────────────────────────────────────────────────── */
+.glass-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ── Prose Override for Service Descriptions ─────────────────────────────── */
+.service-prose p { margin-bottom: 1rem; }
+.service-prose p:last-child { margin-bottom: 0; }
+
+/* ── Testimonial Carousel ────────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 40s linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }

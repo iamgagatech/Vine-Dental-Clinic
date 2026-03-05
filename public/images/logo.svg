@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- Tooth icon mark -->
+  <rect width="60" height="60" rx="14" fill="#0D7377"/>
+  
+  <!-- Tooth shape -->
+  <path d="M30 12 C24 12 18 16 18 22 C18 26 20 29 20 33 C20 38 22 48 26 48 C28 48 29 42 30 42 C31 42 32 48 34 48 C38 48 40 38 40 33 C40 29 42 26 42 22 C42 16 36 12 30 12Z" fill="white" opacity="0.95"/>
+  
+  <!-- Vine leaf accent -->
+  <path d="M22 20 Q26 15 32 18 Q28 16 24 21Z" fill="#A8D5B5" opacity="0.8"/>
+
+  <!-- Wordmark -->
+  <!-- "Vine" -->
+  <text x="72" y="26" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#0D7377" letter-spacing="-0.5">Vine</text>
+  
+  <!-- "Dental Clinic" -->
+  <text x="72" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="400" fill="#1a1a2e" letter-spacing="0.5">Dental Clinic</text>
+  
+  <!-- Est. tag -->
+  <text x="192" y="46" font-family="Arial, sans-serif" font-size="8" fill="#0D7377" opacity="0.7" letter-spacing="0.3">EST. 1995</text>
+</svg>

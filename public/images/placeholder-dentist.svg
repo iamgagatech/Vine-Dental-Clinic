@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D7377;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14919B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D7377;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#136064;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg1)"/>
+  <g opacity="0.1">
+    <circle cx="1600" cy="200" r="200" fill="#fff"/>
+    <circle cx="300" cy="900" r="300" fill="#fff"/>
+    <circle cx="1000" cy="0" r="400" fill="#fff"/>
+  </g>
+  <g fill="#fff" opacity="0.15">
+    <rect x="0" y="400" width="1920" height="2"/>
+    <rect x="0" y="600" width="1920" height="2"/>
+    <rect x="0" y="800" width="1920" height="2"/>
+  </g>
+  <g fill="#14919B" opacity="0.3">
+    <polygon points="0,0 400,0 0,400"/>
+    <polygon points="1920,1080 1520,1080 1920,680"/>
+  </g>
+  <text x="960" y="520" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="48" opacity="0.5">
+    Professional Dentistry Image
+  </text>
+  <text x="960" y="580" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="32" opacity="0.4">
+    Place your local image here: /images/hero/hero-dentist.jpg
+  </text>
+</svg>

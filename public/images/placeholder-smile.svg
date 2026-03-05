@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#0D7377;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#14919B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg2)"/>
+  <g opacity="0.2">
+    <circle cx="960" cy="540" r="350" fill="#fff"/>
+  </g>
+  <g fill="#fff" opacity="0.1">
+    <circle cx="100" cy="100" r="150"/>
+    <circle cx="1820" cy="100" r="100"/>
+    <circle cx="100" cy="980" r="120"/>
+    <circle cx="1820" cy="980" r="180"/>
+  </g>
+  <text x="960" y="520" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="48" opacity="0.6">
+    Beautiful Smiles
+  </text>
+  <text x="960" y="580" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="32" opacity="0.4">
+    Place your local image here: /images/hero/hero-smile.jpg
+  </text>
+</svg>
